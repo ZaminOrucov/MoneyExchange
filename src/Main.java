@@ -1,5 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 import java.util.Scanner;
 
 import java.util.Scanner;
@@ -8,9 +7,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Sadə kurs dəyərləri (misal üçün)
-        double usdToAzn = 1.7;   // 1 USD = 1.7 AZN
-        double eurToAzn = 1.85;  // 1 EUR = 1.85 AZN
+       
+        double usdToAzn = 1.7;   
+        double eurToAzn = 1.85;  
 
         System.out.println("Valyuta Çevirici Proqram");
         System.out.println("-------------------------");
@@ -25,7 +24,7 @@ public class Main {
 
         double result = 0;
 
-        // Əvvəlcə məbləği AZN-ə çeviririk
+      
         double amountInAzn = 0;
         if (fromCurrency.equals("USD")) {
             amountInAzn = amount * usdToAzn;
@@ -38,7 +37,7 @@ public class Main {
             return;
         }
 
-        // İndi isə AZN-dən istənilən valyutaya çeviririk
+      
         if (toCurrency.equals("USD")) {
             result = amountInAzn / usdToAzn;
         } else if (toCurrency.equals("EUR")) {
