@@ -19,7 +19,7 @@ public class Main {
         System.out.print("Valyuta növünü daxil edin (USD, EUR, AZN): ");
         String fromCurrency = input.next().toUpperCase();
 
-        System.out.print("Çevirmək istədiyiniz valyutanı daxil edin (USD, EUR, AZN): ");
+        System.out.print("Valyutanı daxil edin (USD, EUR, AZN): ");
         String toCurrency = input.next().toUpperCase();
 
         double result = 0;
