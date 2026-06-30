@@ -45,7 +45,7 @@ public class Main {
         } else if (toCurrency.equals("AZN")) {
             result = amountInAzn;
         } else {
-            System.out.println("Düzgün valyuta daxil edilmədi!");
+            System.out.println("Valyuta düzgün daxil edilmədi!");
             return;
         }
 
