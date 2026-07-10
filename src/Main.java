@@ -1,8 +1,5 @@
 
 import java.util.Scanner;
-
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -18,13 +15,11 @@ public class Main {
 
         System.out.print("Valyuta növünü daxil edin (USD, EUR, AZN): ");
         String fromCurrency = input.next().toUpperCase();
-
+        
         System.out.print("Valyutanı daxil edin (USD, EUR, AZN): ");
         String toCurrency = input.next().toUpperCase();
-
+        
         double result = 0;
-
-      
         double amountInAzn = 0;
         if (fromCurrency.equals("USD")) {
             amountInAzn = amount * usdToAzn;
@@ -35,9 +30,7 @@ public class Main {
         } else {
             System.out.println("Düzgün valyuta daxil edilmədi!");
             return;
-        }
-
-      
+        } 
         if (toCurrency.equals("USD")) {
             result = amountInAzn / usdToAzn;
         } else if (toCurrency.equals("EUR")) {
@@ -48,7 +41,6 @@ public class Main {
             System.out.println("Valyuta düzgün daxil edilmədi!");
             return;
         }
-
         System.out.println(amount + " " + fromCurrency + " = " + result + " " + toCurrency);
     }
 }
